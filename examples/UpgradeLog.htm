@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+ <html xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><meta content="en-us" http-equiv="Content-Language" /><meta content="text/html; charset=utf-16" http-equiv="Content-Type" /><title _locID="ConversionReport0">
+          迁移报告
+        </title><style> 
+                    /* Body style, for the entire document */
+                    body
+                    {
+                        background: #F3F3F4;
+                        color: #1E1E1F;
+                        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    /* Header1 style, used for the main title */
+                    h1
+                    {
+                        padding: 10px 0px 10px 10px;
+                        font-size: 21pt;
+                        background-color: #E2E2E2;
+                        border-bottom: 1px #C1C1C2 solid; 
+                        color: #201F20;
+                        margin: 0;
+                        font-weight: normal;
+                    }
+
+                    /* Header2 style, used for "Overview" and other sections */
+                    h2
+                    {
+                        font-size: 18pt;
+                        font-weight: normal;
+                        padding: 15px 0 5px 0;
+                        margin: 0;
+                    }
+
+                    /* Header3 style, used for sub-sections, such as project name */
+                    h3
+                    {
+                        font-weight: normal;
+                        font-size: 15pt;
+                        margin: 0;
+                        padding: 15px 0 5px 0;
+                        background-color: transparent;
+                    }
+
+                    /* Color all hyperlinks one color */
+                    a
+                    {
+                        color: #1382CE;
+                    }
+
+                    /* Table styles */ 
+                    table
+                    {
+                        border-spacing: 0 0;
+                        border-collapse: collapse;
+                        font-size: 10pt;
+                    }
+
+                    table th
+                    {
+                        background: #E7E7E8;
+                        text-align: left;
+                        text-decoration: none;
+                        font-weight: normal;
+                        padding: 3px 6px 3px 6px;
+                    }
+
+                    table td
+                    {
+                        vertical-align: top;
+                        padding: 3px 6px 5px 5px;
+                        margin: 0px;
+                        border: 1px solid #E7E7E8;
+                        background: #F7F7F8;
+                    }
+
+                    /* Local link is a style for hyperlinks that link to file:/// content, there are lots so color them as 'normal' text until the user mouse overs */
+                    .localLink
+                    {
+                        color: #1E1E1F;
+                        background: #EEEEED;
+                        text-decoration: none;
+                    }
+
+                    .localLink:hover
+                    {
+                        color: #1382CE;
+                        background: #FFFF99;
+                        text-decoration: none;
+                    }
+
+                    /* Center text, used in the over views cells that contain message level counts */ 
+                    .textCentered
+                    {
+                        text-align: center;
+                    }
+
+                    /* The message cells in message tables should take up all avaliable space */
+                    .messageCell
+                    {
+                        width: 100%;
+                    }
+
+                    /* Padding around the content after the h1 */ 
+                    #content 
+                    {
+	                    padding: 0px 12px 12px 12px; 
+                    }
+
+                    /* The overview table expands to width, with a max width of 97% */ 
+                    #overview table
+                    {
+                        width: auto;
+                        max-width: 75%; 
+                    }
+
+                    /* The messages tables are always 97% width */
+                    #messages table
+                    {
+                        width: 97%;
+                    }
+
+                    /* All Icons */
+                    .IconSuccessEncoded, .IconInfoEncoded, .IconWarningEncoded, .IconErrorEncoded
+                    {
+                        min-width:18px;
+                        min-height:18px; 
+                        background-repeat:no-repeat;
+                        background-position:center;
+                    }
+
+                    /* Success icon encoded */
+                    .IconSuccessEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconSuccess#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcElEQVR4Xq2TsUsCURzHv15g8ZJcBWlyiYYgCIWcb9DFRRwMW5TA2c0/QEFwFkxxUQdxVlBwCYWOi6IhWgQhBLHJUCkhLr/BW8S7gvrAg+N+v8/v+x68Z8MGy+XSCyABQAXgBgHGALoASkIIDWSLeLBetdHryMjd5IxQPWT4rn1c/P7+xxp72Cs9m5SZ0Bq2vPnbPFafK2zDvmNHypdC0BPkLlQhxJsCAhQoZwdZU5mwxh720qGo8MzTxTTKZDPCx2HoVzp6lz0Q9tKhyx0kGs8Ny+TkWRKk8lCROwEduhyg9l/6lunOPSfmH3NUH6uQ0KHLAe7JYvJjevm+DAMGJHToKtigE+vwvIidxLamb8IBY9e+C5LiXREkfho3TSd06HJA13/oh6T51MTsfQbHrsMynQ5dDihFjiK8JJAU9AKIWTp76dCVN7HWHrajmUEGvyF9nkbAE6gLIS7kTUyuf2gscLoJrElZo/Mvj+nPz/kLTmfnEwP3tB0AAAAASUVORK5CYII=);
+                    }
+
+                    /* Information icon encoded */
+                    .IconInfoEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconInformation#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR4Xs2TsUoDQRRF7wwoziokjZUKadInhdhukR9YP8DMX1hYW+QvdsXa/QHBbcXC7W0CamWTQnclFutceIQJwwaWNLlwm5k5d94M76mmaeCrrmsLYOocY12FcxZFUeozCqKqqgYA8uevv1H6VuPxcwlfk5N92KHBxfFeCSAxxswlYAW/Xr989x/mv9gkhtyMDhcAxgzRsp7flj8B/HF1RsMXq+NZMkopaHe7lbKxQUEIGbKsYNoGn969060hZBkQex/W8oRQwsQaW2o3Ago2SVcJUzAgY3N0lTCZZm+zPS8HB51gMmS1DEYyOz9acKO1D8JWTlafKIMxdhvlfdyT94Vv5h7P8Ky7nQzACmhvKq3zk3PjW9asz9D/1oigecsioooAAAAASUVORK5CYII=);
+                    }
+
+                    /* Warning icon encoded */
+                    .IconWarningEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconWarning#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4XpWSMQ7CMAxFf4xAyBMLCxMrO8dhaBcuwdCJS3RJBw7SA/QGTCxdWJgiQYWKXJWKIXHIlyw5lqr34tQgEOdcBsCOx5yZK3hCCKdYXneQkh4pEfqzLfu+wVDSyyzFoJjfz9NB+pAF+eizx2Vruts0k15mPgvS6GYvpVtQhB61IB/dk6AF6fS4Ben0uIX5odtFe8Q/eW1KvFeH4e8khT6+gm5B+t3juyDt7n0jpe+CANTd+oTUjN/U3yVaABnSUjFz/gFq44JaVSCXeQAAAABJRU5ErkJggg==);
+                    }
+
+                    /* Error icon encoded */
+                    .IconErrorEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconError#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4XqWTvUoEQRCE6wYPZUA80AfwAQz23uCMjA7MDRQEIzPBVEyNTQUFIw00vcQTTMzuAh/AxEQQT8HF/3G/oGGnEUGuoNnd6qoZuqltyKEsyzVJq5I6rnUp6SjGeGhESikzzlc1eL7opfuVbrqbU1Zw9NCgtQMaZpY0eNnaaL2fHusvTK5vKu7sjSS1Y4y3QUA6K3e3Mau5UFDyMP7tYF9o8cAHZv68vipoIJg971PZIZ5HiwdvYGGvFVFHmGmZ2MxwmQYPXubPl9Up0tfoMQGetXd6mRbvhBw+boZ6WF7Mbv1+GsHRk0fQmPAH1GfmZirbCfDJ61tw3Px8/8pZsPAG4jlVhcPgZ7adwNWBB68lkRQWFiTgFlbnLY3DGGM7izIJIyT/jjIvEJw6fdJTc6krDzh6aMwMP9bvDH4ADSsa9uSWVJkAAAAASUVORK5CYII=);
+                    }
+                 </style><script type="text/javascript" language="javascript"> 
+          
+            // Startup 
+            // Hook up the the loaded event for the document/window, to linkify the document content
+            var startupFunction = function() { linkifyElement("messages"); };
+            
+            if(window.attachEvent)
+            {
+              window.attachEvent('onload', startupFunction);
+            }
+            else if (window.addEventListener) 
+            {
+              window.addEventListener('load', startupFunction, false);
+            }
+            else 
+            {
+              document.addEventListener('load', startupFunction, false);
+            } 
+            
+            // Toggles the visibility of table rows with the specified name 
+            function toggleTableRowsByName(name)
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  if(!!currentName && currentName.indexOf(name) == 0)
+                  {
+                      var isVisible = allRows[i].style.display == ''; 
+                      isVisible ? allRows[i].style.display = 'none' : allRows[i].style.display = '';
+                  }
+               }
+            }
+            
+            function scrollToFirstVisibleRow(name) 
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  var isVisible = allRows[i].style.display == ''; 
+                  if(!!currentName && currentName.indexOf(name) == 0 && isVisible)
+                  {
+                     allRows[i].scrollIntoView(true); 
+                     return true; 
+                  }
+               }
+               
+               return false;
+            }
+            
+            // Linkifies the specified text content, replaces candidate links with html links 
+            function linkify(text)
+            {
+                 if(!text || 0 === text.length)
+                 {
+                     return text; 
+                 }
+
+                 // Find http, https and ftp links and replace them with hyper links 
+                 var urlLink = /(http|https|ftp)\:\/\/[a-zA-Z0-9\-\.]+(:[a-zA-Z0-9]*)?\/?([a-zA-Z0-9\-\._\?\,\/\\\+&%\$#\=~;\{\}])*/gi;
+                 
+                 return text.replace(urlLink, '<a href="$&">$&</a>') ;
+            }
+            
+            // Linkifies the specified element by ID
+            function linkifyElement(id)
+            {
+                var element = document.getElementById(id);
+                if(!!element)
+                {
+                  element.innerHTML = linkify(element.innerHTML); 
+                }
+            }
+            
+            function ToggleMessageVisibility(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              toggleTableRowsByName("MessageRowClass" + projectName);
+              toggleTableRowsByName('MessageRowHeaderShow' + projectName);
+              toggleTableRowsByName('MessageRowHeaderHide' + projectName); 
+            }
+            
+            function ScrollToFirstVisibleMessage(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              // First try the 'Show messages' row
+              if(!scrollToFirstVisibleRow('MessageRowHeaderShow' + projectName))
+              {
+                // Failed to find a visible row for 'Show messages', try an actual message row 
+                scrollToFirstVisibleRow('MessageRowClass' + projectName); 
+              }
+            }
+           </script></head><body><h1 _locID="ConversionReport">
+          迁移报告 - </h1><div id="content"><h2 _locID="OverviewTitle">概述</h2><div id="overview"><table><tr><th></th><th _locID="ProjectTableHeader">项目</th><th _locID="PathTableHeader">路径</th><th _locID="ErrorsTableHeader">错误</th><th _locID="WarningsTableHeader">警告</th><th _locID="MessagesTableHeader">消息</th></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#cppunit">cppunit</a></strong></td><td>..\src\cppunit\cppunit.vcproj</td><td class="textCentered"><a href="#cppunitError">2</a></td><td class="textCentered"><a href="#cppunitWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('cppunit'); return false;">1</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#cppunit_dll">cppunit_dll</a></strong></td><td>..\src\cppunit\cppunit_dll.vcproj</td><td class="textCentered"><a href="#cppunit_dllError">2</a></td><td class="textCentered"><a href="#cppunit_dllWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('cppunit_dll'); return false;">1</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#DllPlugInTester">DllPlugInTester</a></strong></td><td>..\src\DllPlugInTester\DllPlugInTester.vcproj</td><td class="textCentered"><a href="#DllPlugInTesterError">2</a></td><td class="textCentered"><a href="#DllPlugInTesterWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('DllPlugInTester'); return false;">1</a></td></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#DllPlugInTesterTest">DllPlugInTesterTest</a></strong></td><td>..\src\DllPlugInTester\DllPlugInTesterTest.vcproj</td><td class="textCentered"><a href="#DllPlugInTesterTestError">2</a></td><td class="textCentered"><a href="#DllPlugInTesterTestWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('DllPlugInTesterTest'); return false;">1</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#ClockerPlugIn">ClockerPlugIn</a></strong></td><td>ClockerPlugIn\ClockerPlugIn.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#ClockerPlugInWarning">9</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('ClockerPlugIn'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#CppUnitTestMain">CppUnitTestMain</a></strong></td><td>cppunittest\CppUnitTestMain.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#CppUnitTestMainWarning">9</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('CppUnitTestMain'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#CppUnitTestPlugIn">CppUnitTestPlugIn</a></strong></td><td>cppunittest\CppUnitTestPlugIn.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#CppUnitTestPlugInWarning">6</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('CppUnitTestPlugIn'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#DumperPlugIn">DumperPlugIn</a></strong></td><td>DumperPlugIn\DumperPlugIn.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#DumperPlugInWarning">6</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('DumperPlugIn'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#money">money</a></strong></td><td>money\money.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#moneyWarning">6</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('money'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#simple_plugin">simple_plugin</a></strong></td><td>SIMPLE\simple_plugin.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#simple_pluginWarning">6</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('simple_plugin'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#hierarchy">hierarchy</a></strong></td><td>hierarchy\hierarchy.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#hierarchyWarning">5</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('hierarchy'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#simple">simple</a></strong></td><td>simple\simple.vcproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#simpleWarning">5</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('simple'); return false;">2</a></td></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#Solution"><span _locID="OverviewSolutionSpan">解决方案</span></a></strong></td><td>examples2008.sln</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#SolutionWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Solution'); return false;">2</a></td></tr></table></div><h2 _locID="SolutionAndProjectsTitle">解决方案和项目</h2><div id="messages"><a name="cppunit" /><h3>cppunit</h3><table><tr id="cppunitHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClasscppunit"><td class="IconErrorEncoded"><a name="cppunitError" /></td><td class="messageCell"><strong>..\src\cppunit\cppunit.vcproj:
+        </strong><span>File 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\src\cppunit\cppunit.vcproj' was not found.</span></td></tr><tr name="ErrorRowClasscppunit"><td class="IconErrorEncoded"><a name="cppunitError" /></td><td class="messageCell"><strong>..\src\cppunit\cppunit.vcproj:
+        </strong><span>项目升级失败。</span></td></tr><tr name="WarningRowClasscppunit"><td class="IconWarningEncoded"><a name="cppunitWarning" /></td><td class="messageCell"><strong>..\src\cppunit\cppunit.vcproj:
+        </strong><span>警告: 正将项目文件备份到与原始解决方案相对路径不同的相对路径中。  文件夹层次结构上的差异可能会导致在打开或生成备份的解决方案和项目时出现问题。</span></td></tr><tr name="MessageRowHeaderShowcppunit"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="cppunitMessage" onclick="ToggleMessageVisibility('cppunit'); return false;">
+          显示 1 其他消息
+        </a></td></tr><tr name="MessageRowClasscppunit" style="display: none"><td class="IconInfoEncoded"><a name="cppunitMessage" /></td><td class="messageCell"><strong>..\src\cppunit\cppunit.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\src\cppunit\cppunit.vcproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHidecppunit"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="cppunitMessage" onclick="ToggleMessageVisibility('cppunit'); return false;">
+          隐藏 1 其他消息
+        </a></td></tr></table><a name="cppunit_dll" /><h3>cppunit_dll</h3><table><tr id="cppunit_dllHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClasscppunit_dll"><td class="IconErrorEncoded"><a name="cppunit_dllError" /></td><td class="messageCell"><strong>..\src\cppunit\cppunit_dll.vcproj:
+        </strong><span>File 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\src\cppunit\cppunit_dll.vcproj' was not found.</span></td></tr><tr name="ErrorRowClasscppunit_dll"><td class="IconErrorEncoded"><a name="cppunit_dllError" /></td><td class="messageCell"><strong>..\src\cppunit\cppunit_dll.vcproj:
+        </strong><span>项目升级失败。</span></td></tr><tr name="WarningRowClasscppunit_dll"><td class="IconWarningEncoded"><a name="cppunit_dllWarning" /></td><td class="messageCell"><strong>..\src\cppunit\cppunit_dll.vcproj:
+        </strong><span>警告: 正将项目文件备份到与原始解决方案相对路径不同的相对路径中。  文件夹层次结构上的差异可能会导致在打开或生成备份的解决方案和项目时出现问题。</span></td></tr><tr name="MessageRowHeaderShowcppunit_dll"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="cppunit_dllMessage" onclick="ToggleMessageVisibility('cppunit_dll'); return false;">
+          显示 1 其他消息
+        </a></td></tr><tr name="MessageRowClasscppunit_dll" style="display: none"><td class="IconInfoEncoded"><a name="cppunit_dllMessage" /></td><td class="messageCell"><strong>..\src\cppunit\cppunit_dll.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\src\cppunit\cppunit_dll.vcproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHidecppunit_dll"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="cppunit_dllMessage" onclick="ToggleMessageVisibility('cppunit_dll'); return false;">
+          隐藏 1 其他消息
+        </a></td></tr></table><a name="DllPlugInTester" /><h3>DllPlugInTester</h3><table><tr id="DllPlugInTesterHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassDllPlugInTester"><td class="IconErrorEncoded"><a name="DllPlugInTesterError" /></td><td class="messageCell"><strong>..\src\DllPlugInTester\DllPlugInTester.vcproj:
+        </strong><span>File 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\src\DllPlugInTester\DllPlugInTester.vcproj' was not found.</span></td></tr><tr name="ErrorRowClassDllPlugInTester"><td class="IconErrorEncoded"><a name="DllPlugInTesterError" /></td><td class="messageCell"><strong>..\src\DllPlugInTester\DllPlugInTester.vcproj:
+        </strong><span>项目升级失败。</span></td></tr><tr name="WarningRowClassDllPlugInTester"><td class="IconWarningEncoded"><a name="DllPlugInTesterWarning" /></td><td class="messageCell"><strong>..\src\DllPlugInTester\DllPlugInTester.vcproj:
+        </strong><span>警告: 正将项目文件备份到与原始解决方案相对路径不同的相对路径中。  文件夹层次结构上的差异可能会导致在打开或生成备份的解决方案和项目时出现问题。</span></td></tr><tr name="MessageRowHeaderShowDllPlugInTester"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="DllPlugInTesterMessage" onclick="ToggleMessageVisibility('DllPlugInTester'); return false;">
+          显示 1 其他消息
+        </a></td></tr><tr name="MessageRowClassDllPlugInTester" style="display: none"><td class="IconInfoEncoded"><a name="DllPlugInTesterMessage" /></td><td class="messageCell"><strong>..\src\DllPlugInTester\DllPlugInTester.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\src\DllPlugInTester\DllPlugInTester.vcproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideDllPlugInTester"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="DllPlugInTesterMessage" onclick="ToggleMessageVisibility('DllPlugInTester'); return false;">
+          隐藏 1 其他消息
+        </a></td></tr></table><a name="DllPlugInTesterTest" /><h3>DllPlugInTesterTest</h3><table><tr id="DllPlugInTesterTestHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="ErrorRowClassDllPlugInTesterTest"><td class="IconErrorEncoded"><a name="DllPlugInTesterTestError" /></td><td class="messageCell"><strong>..\src\DllPlugInTester\DllPlugInTesterTest.vcproj:
+        </strong><span>File 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\src\DllPlugInTester\DllPlugInTesterTest.vcproj' was not found.</span></td></tr><tr name="ErrorRowClassDllPlugInTesterTest"><td class="IconErrorEncoded"><a name="DllPlugInTesterTestError" /></td><td class="messageCell"><strong>..\src\DllPlugInTester\DllPlugInTesterTest.vcproj:
+        </strong><span>项目升级失败。</span></td></tr><tr name="WarningRowClassDllPlugInTesterTest"><td class="IconWarningEncoded"><a name="DllPlugInTesterTestWarning" /></td><td class="messageCell"><strong>..\src\DllPlugInTester\DllPlugInTesterTest.vcproj:
+        </strong><span>警告: 正将项目文件备份到与原始解决方案相对路径不同的相对路径中。  文件夹层次结构上的差异可能会导致在打开或生成备份的解决方案和项目时出现问题。</span></td></tr><tr name="MessageRowHeaderShowDllPlugInTesterTest"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="DllPlugInTesterTestMessage" onclick="ToggleMessageVisibility('DllPlugInTesterTest'); return false;">
+          显示 1 其他消息
+        </a></td></tr><tr name="MessageRowClassDllPlugInTesterTest" style="display: none"><td class="IconInfoEncoded"><a name="DllPlugInTesterTestMessage" /></td><td class="messageCell"><strong>..\src\DllPlugInTester\DllPlugInTesterTest.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\src\DllPlugInTester\DllPlugInTesterTest.vcproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideDllPlugInTesterTest"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="DllPlugInTesterTestMessage" onclick="ToggleMessageVisibility('DllPlugInTesterTest'); return false;">
+          隐藏 1 其他消息
+        </a></td></tr></table><a name="ClockerPlugIn" /><h3>ClockerPlugIn</h3><table><tr id="ClockerPlugInHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="WarningRowClassClockerPlugIn"><td class="IconWarningEncoded"><a name="ClockerPlugInWarning" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassClockerPlugIn"><td class="IconWarningEncoded"><a name="ClockerPlugInWarning" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ClockerPlugIn\Debug\ClockerPlugIn.dll') does not match the Librarian's OutputFile property value '.\Debug\ClockerPlugIn.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Debug\ClockerPlugIn.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassClockerPlugIn"><td class="IconWarningEncoded"><a name="ClockerPlugInWarning" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetName) ('ClockerPlugIn') does not match the Linker's OutputFile property value '../../lib/ClockerPlugInd.dll' ('ClockerPlugInd') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassClockerPlugIn"><td class="IconWarningEncoded"><a name="ClockerPlugInWarning" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ClockerPlugIn\Debug\ClockerPlugIn.dll') does not match the Linker's OutputFile property value '../../lib/ClockerPlugInd.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\../../lib/ClockerPlugInd.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassClockerPlugIn"><td class="IconWarningEncoded"><a name="ClockerPlugInWarning" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ClockerPlugIn\Release\ClockerPlugIn.dll') does not match the Librarian's OutputFile property value '.\Release\ClockerPlugIn.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Release\ClockerPlugIn.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassClockerPlugIn"><td class="IconWarningEncoded"><a name="ClockerPlugInWarning" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ClockerPlugIn\Release\ClockerPlugIn.dll') does not match the Linker's OutputFile property value '../../lib/ClockerPlugIn.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\../../lib/ClockerPlugIn.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassClockerPlugIn"><td class="IconWarningEncoded"><a name="ClockerPlugInWarning" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ClockerPlugIn\DebugNtTimer\ClockerPlugIn.dll') does not match the Librarian's OutputFile property value '.\DebugNtTimer\ClockerPlugIn.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DebugNtTimer\ClockerPlugIn.dll') in project configuration 'Debug NtTimer|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassClockerPlugIn"><td class="IconWarningEncoded"><a name="ClockerPlugInWarning" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetName) ('ClockerPlugIn') does not match the Linker's OutputFile property value '../../lib/ClockerPlugInNtd.dll' ('ClockerPlugInNtd') in project configuration 'Debug NtTimer|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassClockerPlugIn"><td class="IconWarningEncoded"><a name="ClockerPlugInWarning" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ClockerPlugIn\DebugNtTimer\ClockerPlugIn.dll') does not match the Linker's OutputFile property value '../../lib/ClockerPlugInNtd.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\../../lib/ClockerPlugInNtd.dll') in project configuration 'Debug NtTimer|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowClockerPlugIn"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="ClockerPlugInMessage" onclick="ToggleMessageVisibility('ClockerPlugIn'); return false;">
+          显示 2 其他消息
+        </a></td></tr><tr name="MessageRowClassClockerPlugIn" style="display: none"><td class="IconInfoEncoded"><a name="ClockerPlugInMessage" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ClockerPlugIn\ClockerPlugIn.vcproj'.</span></td></tr><tr name="MessageRowClassClockerPlugIn" style="display: none"><td class="IconInfoEncoded"><a name="ClockerPlugInMessage" /></td><td class="messageCell"><strong>ClockerPlugIn\ClockerPlugIn.vcproj:
+        </strong><span>Done converting to new project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ClockerPlugIn\ClockerPlugIn.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideClockerPlugIn"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="ClockerPlugInMessage" onclick="ToggleMessageVisibility('ClockerPlugIn'); return false;">
+          隐藏 2 其他消息
+        </a></td></tr></table><a name="CppUnitTestMain" /><h3>CppUnitTestMain</h3><table><tr id="CppUnitTestMainHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="WarningRowClassCppUnitTestMain"><td class="IconWarningEncoded"><a name="CppUnitTestMainWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassCppUnitTestMain"><td class="IconWarningEncoded"><a name="CppUnitTestMainWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\ReleaseDLL\CppUnitTestMain.exe') does not match the Librarian's OutputFile property value '.\ReleaseDLL\CppUnitTestMain.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ReleaseDLL\CppUnitTestMain.exe') in project configuration 'Release DLL|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestMain"><td class="IconWarningEncoded"><a name="CppUnitTestMainWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\ReleaseDLL\CppUnitTestMain.exe') does not match the Linker's OutputFile property value '.\ReleaseDLL/CppUnitTestMain.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ReleaseDLL/CppUnitTestMain.exe') in project configuration 'Release DLL|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestMain"><td class="IconWarningEncoded"><a name="CppUnitTestMainWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\DebugDLL\CppUnitTestMain.exe') does not match the Librarian's OutputFile property value '.\DebugDLL\CppUnitTestMain.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DebugDLL\CppUnitTestMain.exe') in project configuration 'Debug DLL|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestMain"><td class="IconWarningEncoded"><a name="CppUnitTestMainWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\DebugDLL\CppUnitTestMain.exe') does not match the Linker's OutputFile property value '.\DebugDLL/CppUnitTestMain.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DebugDLL/CppUnitTestMain.exe') in project configuration 'Debug DLL|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestMain"><td class="IconWarningEncoded"><a name="CppUnitTestMainWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\Debug\CppUnitTestMain.exe') does not match the Librarian's OutputFile property value '.\Debug\CppUnitTestMain.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Debug\CppUnitTestMain.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestMain"><td class="IconWarningEncoded"><a name="CppUnitTestMainWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\Debug\CppUnitTestMain.exe') does not match the Linker's OutputFile property value '.\Debug/CppUnitTestMain.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Debug/CppUnitTestMain.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestMain"><td class="IconWarningEncoded"><a name="CppUnitTestMainWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\Release\CppUnitTestMain.exe') does not match the Librarian's OutputFile property value '.\Release\CppUnitTestMain.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Release\CppUnitTestMain.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestMain"><td class="IconWarningEncoded"><a name="CppUnitTestMainWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\Release\CppUnitTestMain.exe') does not match the Linker's OutputFile property value '.\Release/CppUnitTestMain.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Release/CppUnitTestMain.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowCppUnitTestMain"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="CppUnitTestMainMessage" onclick="ToggleMessageVisibility('CppUnitTestMain'); return false;">
+          显示 2 其他消息
+        </a></td></tr><tr name="MessageRowClassCppUnitTestMain" style="display: none"><td class="IconInfoEncoded"><a name="CppUnitTestMainMessage" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\CppUnitTestMain.vcproj'.</span></td></tr><tr name="MessageRowClassCppUnitTestMain" style="display: none"><td class="IconInfoEncoded"><a name="CppUnitTestMainMessage" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestMain.vcproj:
+        </strong><span>Done converting to new project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\CppUnitTestMain.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideCppUnitTestMain"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="CppUnitTestMainMessage" onclick="ToggleMessageVisibility('CppUnitTestMain'); return false;">
+          隐藏 2 其他消息
+        </a></td></tr></table><a name="CppUnitTestPlugIn" /><h3>CppUnitTestPlugIn</h3><table><tr id="CppUnitTestPlugInHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="WarningRowClassCppUnitTestPlugIn"><td class="IconWarningEncoded"><a name="CppUnitTestPlugInWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestPlugIn.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassCppUnitTestPlugIn"><td class="IconWarningEncoded"><a name="CppUnitTestPlugInWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\DebugPlugIn\CppUnitTestPlugIn.dll') does not match the Librarian's OutputFile property value '.\DebugPlugIn\CppUnitTestPlugIn.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DebugPlugIn\CppUnitTestPlugIn.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestPlugIn"><td class="IconWarningEncoded"><a name="CppUnitTestPlugInWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetName) ('CppUnitTestPlugIn') does not match the Linker's OutputFile property value 'DebugPlugIn/CppUnitTestPlugInd.dll' ('CppUnitTestPlugInd') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestPlugIn"><td class="IconWarningEncoded"><a name="CppUnitTestPlugInWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\DebugPlugIn\CppUnitTestPlugIn.dll') does not match the Linker's OutputFile property value 'DebugPlugIn/CppUnitTestPlugInd.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DebugPlugIn/CppUnitTestPlugInd.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestPlugIn"><td class="IconWarningEncoded"><a name="CppUnitTestPlugInWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\ReleasePlugIn\CppUnitTestPlugIn.dll') does not match the Librarian's OutputFile property value '.\ReleasePlugIn\CppUnitTestPlugIn.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ReleasePlugIn\CppUnitTestPlugIn.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassCppUnitTestPlugIn"><td class="IconWarningEncoded"><a name="CppUnitTestPlugInWarning" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\ReleasePlugIn\CppUnitTestPlugIn.dll') does not match the Linker's OutputFile property value '.\ReleasePlugIn/CppUnitTestPlugIn.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ReleasePlugIn/CppUnitTestPlugIn.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowCppUnitTestPlugIn"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="CppUnitTestPlugInMessage" onclick="ToggleMessageVisibility('CppUnitTestPlugIn'); return false;">
+          显示 2 其他消息
+        </a></td></tr><tr name="MessageRowClassCppUnitTestPlugIn" style="display: none"><td class="IconInfoEncoded"><a name="CppUnitTestPlugInMessage" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestPlugIn.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\CppUnitTestPlugIn.vcproj'.</span></td></tr><tr name="MessageRowClassCppUnitTestPlugIn" style="display: none"><td class="IconInfoEncoded"><a name="CppUnitTestPlugInMessage" /></td><td class="messageCell"><strong>cppunittest\CppUnitTestPlugIn.vcproj:
+        </strong><span>Done converting to new project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\cppunittest\CppUnitTestPlugIn.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideCppUnitTestPlugIn"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="CppUnitTestPlugInMessage" onclick="ToggleMessageVisibility('CppUnitTestPlugIn'); return false;">
+          隐藏 2 其他消息
+        </a></td></tr></table><a name="DumperPlugIn" /><h3>DumperPlugIn</h3><table><tr id="DumperPlugInHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="WarningRowClassDumperPlugIn"><td class="IconWarningEncoded"><a name="DumperPlugInWarning" /></td><td class="messageCell"><strong>DumperPlugIn\DumperPlugIn.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassDumperPlugIn"><td class="IconWarningEncoded"><a name="DumperPlugInWarning" /></td><td class="messageCell"><strong>DumperPlugIn\DumperPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DumperPlugIn\Debug\DumperPlugIn.dll') does not match the Librarian's OutputFile property value '.\Debug\DumperPlugIn.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Debug\DumperPlugIn.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassDumperPlugIn"><td class="IconWarningEncoded"><a name="DumperPlugInWarning" /></td><td class="messageCell"><strong>DumperPlugIn\DumperPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetName) ('DumperPlugIn') does not match the Linker's OutputFile property value '../../lib/DumperPlugInd.dll' ('DumperPlugInd') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassDumperPlugIn"><td class="IconWarningEncoded"><a name="DumperPlugInWarning" /></td><td class="messageCell"><strong>DumperPlugIn\DumperPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DumperPlugIn\Debug\DumperPlugIn.dll') does not match the Linker's OutputFile property value '../../lib/DumperPlugInd.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\../../lib/DumperPlugInd.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassDumperPlugIn"><td class="IconWarningEncoded"><a name="DumperPlugInWarning" /></td><td class="messageCell"><strong>DumperPlugIn\DumperPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DumperPlugIn\Release\DumperPlugIn.dll') does not match the Librarian's OutputFile property value '.\Release\DumperPlugIn.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Release\DumperPlugIn.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassDumperPlugIn"><td class="IconWarningEncoded"><a name="DumperPlugInWarning" /></td><td class="messageCell"><strong>DumperPlugIn\DumperPlugIn.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DumperPlugIn\Release\DumperPlugIn.dll') does not match the Linker's OutputFile property value '../../lib/DumperPlugIn.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\../../lib/DumperPlugIn.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowDumperPlugIn"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="DumperPlugInMessage" onclick="ToggleMessageVisibility('DumperPlugIn'); return false;">
+          显示 2 其他消息
+        </a></td></tr><tr name="MessageRowClassDumperPlugIn" style="display: none"><td class="IconInfoEncoded"><a name="DumperPlugInMessage" /></td><td class="messageCell"><strong>DumperPlugIn\DumperPlugIn.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DumperPlugIn\DumperPlugIn.vcproj'.</span></td></tr><tr name="MessageRowClassDumperPlugIn" style="display: none"><td class="IconInfoEncoded"><a name="DumperPlugInMessage" /></td><td class="messageCell"><strong>DumperPlugIn\DumperPlugIn.vcproj:
+        </strong><span>Done converting to new project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DumperPlugIn\DumperPlugIn.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideDumperPlugIn"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="DumperPlugInMessage" onclick="ToggleMessageVisibility('DumperPlugIn'); return false;">
+          隐藏 2 其他消息
+        </a></td></tr></table><a name="money" /><h3>money</h3><table><tr id="moneyHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="WarningRowClassmoney"><td class="IconWarningEncoded"><a name="moneyWarning" /></td><td class="messageCell"><strong>money\money.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClassmoney"><td class="IconWarningEncoded"><a name="moneyWarning" /></td><td class="messageCell"><strong>money\money.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\money\Debug\money.exe') does not match the Librarian's OutputFile property value '.\Debug\money.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Debug\money.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassmoney"><td class="IconWarningEncoded"><a name="moneyWarning" /></td><td class="messageCell"><strong>money\money.vcproj:
+        </strong><span>MSB8012: $(TargetName) ('money') does not match the Linker's OutputFile property value 'Debug/moneyd.exe' ('moneyd') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassmoney"><td class="IconWarningEncoded"><a name="moneyWarning" /></td><td class="messageCell"><strong>money\money.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\money\Debug\money.exe') does not match the Linker's OutputFile property value 'Debug/moneyd.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Debug/moneyd.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClassmoney"><td class="IconWarningEncoded"><a name="moneyWarning" /></td><td class="messageCell"><strong>money\money.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\money\Release\money.exe') does not match the Librarian's OutputFile property value '.\Release\money.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Release\money.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClassmoney"><td class="IconWarningEncoded"><a name="moneyWarning" /></td><td class="messageCell"><strong>money\money.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\money\Release\money.exe') does not match the Linker's OutputFile property value '.\Release/money.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Release/money.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowmoney"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="moneyMessage" onclick="ToggleMessageVisibility('money'); return false;">
+          显示 2 其他消息
+        </a></td></tr><tr name="MessageRowClassmoney" style="display: none"><td class="IconInfoEncoded"><a name="moneyMessage" /></td><td class="messageCell"><strong>money\money.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\money\money.vcproj'.</span></td></tr><tr name="MessageRowClassmoney" style="display: none"><td class="IconInfoEncoded"><a name="moneyMessage" /></td><td class="messageCell"><strong>money\money.vcproj:
+        </strong><span>Done converting to new project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\money\money.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHidemoney"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="moneyMessage" onclick="ToggleMessageVisibility('money'); return false;">
+          隐藏 2 其他消息
+        </a></td></tr></table><a name="simple_plugin" /><h3>simple_plugin</h3><table><tr id="simple_pluginHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="WarningRowClasssimple_plugin"><td class="IconWarningEncoded"><a name="simple_pluginWarning" /></td><td class="messageCell"><strong>SIMPLE\simple_plugin.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClasssimple_plugin"><td class="IconWarningEncoded"><a name="simple_pluginWarning" /></td><td class="messageCell"><strong>SIMPLE\simple_plugin.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\simple\DebugPlugIn\simple_plugin.dll') does not match the Librarian's OutputFile property value '.\DebugPlugIn\simple_plugin.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DebugPlugIn\simple_plugin.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClasssimple_plugin"><td class="IconWarningEncoded"><a name="simple_pluginWarning" /></td><td class="messageCell"><strong>SIMPLE\simple_plugin.vcproj:
+        </strong><span>MSB8012: $(TargetName) ('simple_plugin') does not match the Linker's OutputFile property value 'DebugPlugIn/simple_plugind.dll' ('simple_plugind') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClasssimple_plugin"><td class="IconWarningEncoded"><a name="simple_pluginWarning" /></td><td class="messageCell"><strong>SIMPLE\simple_plugin.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\simple\DebugPlugIn\simple_plugin.dll') does not match the Linker's OutputFile property value 'DebugPlugIn/simple_plugind.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\DebugPlugIn/simple_plugind.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClasssimple_plugin"><td class="IconWarningEncoded"><a name="simple_pluginWarning" /></td><td class="messageCell"><strong>SIMPLE\simple_plugin.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\simple\ReleasePlugIn\simple_plugin.dll') does not match the Librarian's OutputFile property value '.\ReleasePlugIn\simple_plugin.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ReleasePlugIn\simple_plugin.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClasssimple_plugin"><td class="IconWarningEncoded"><a name="simple_pluginWarning" /></td><td class="messageCell"><strong>SIMPLE\simple_plugin.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\simple\ReleasePlugIn\simple_plugin.dll') does not match the Linker's OutputFile property value '.\ReleasePlugIn/simple_plugin.dll' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\ReleasePlugIn/simple_plugin.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowsimple_plugin"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="simple_pluginMessage" onclick="ToggleMessageVisibility('simple_plugin'); return false;">
+          显示 2 其他消息
+        </a></td></tr><tr name="MessageRowClasssimple_plugin" style="display: none"><td class="IconInfoEncoded"><a name="simple_pluginMessage" /></td><td class="messageCell"><strong>SIMPLE\simple_plugin.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\SIMPLE\simple_plugin.vcproj'.</span></td></tr><tr name="MessageRowClasssimple_plugin" style="display: none"><td class="IconInfoEncoded"><a name="simple_pluginMessage" /></td><td class="messageCell"><strong>SIMPLE\simple_plugin.vcproj:
+        </strong><span>Done converting to new project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\SIMPLE\simple_plugin.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHidesimple_plugin"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="simple_pluginMessage" onclick="ToggleMessageVisibility('simple_plugin'); return false;">
+          隐藏 2 其他消息
+        </a></td></tr></table><a name="hierarchy" /><h3>hierarchy</h3><table><tr id="hierarchyHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="WarningRowClasshierarchy"><td class="IconWarningEncoded"><a name="hierarchyWarning" /></td><td class="messageCell"><strong>hierarchy\hierarchy.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClasshierarchy"><td class="IconWarningEncoded"><a name="hierarchyWarning" /></td><td class="messageCell"><strong>hierarchy\hierarchy.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\hierarchy\Debug\hierarchy.exe') does not match the Librarian's OutputFile property value '.\Debug\hierarchy.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Debug\hierarchy.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClasshierarchy"><td class="IconWarningEncoded"><a name="hierarchyWarning" /></td><td class="messageCell"><strong>hierarchy\hierarchy.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\hierarchy\Debug\hierarchy.exe') does not match the Linker's OutputFile property value '.\Debug/hierarchy.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Debug/hierarchy.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClasshierarchy"><td class="IconWarningEncoded"><a name="hierarchyWarning" /></td><td class="messageCell"><strong>hierarchy\hierarchy.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\hierarchy\Release\hierarchy.exe') does not match the Librarian's OutputFile property value '.\Release\hierarchy.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Release\hierarchy.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClasshierarchy"><td class="IconWarningEncoded"><a name="hierarchyWarning" /></td><td class="messageCell"><strong>hierarchy\hierarchy.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\hierarchy\Release\hierarchy.exe') does not match the Linker's OutputFile property value '.\Release/hierarchy.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Release/hierarchy.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowhierarchy"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="hierarchyMessage" onclick="ToggleMessageVisibility('hierarchy'); return false;">
+          显示 2 其他消息
+        </a></td></tr><tr name="MessageRowClasshierarchy" style="display: none"><td class="IconInfoEncoded"><a name="hierarchyMessage" /></td><td class="messageCell"><strong>hierarchy\hierarchy.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\hierarchy\hierarchy.vcproj'.</span></td></tr><tr name="MessageRowClasshierarchy" style="display: none"><td class="IconInfoEncoded"><a name="hierarchyMessage" /></td><td class="messageCell"><strong>hierarchy\hierarchy.vcproj:
+        </strong><span>Done converting to new project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\hierarchy\hierarchy.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHidehierarchy"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="hierarchyMessage" onclick="ToggleMessageVisibility('hierarchy'); return false;">
+          隐藏 2 其他消息
+        </a></td></tr></table><a name="simple" /><h3>simple</h3><table><tr id="simpleHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="WarningRowClasssimple"><td class="IconWarningEncoded"><a name="simpleWarning" /></td><td class="messageCell"><strong>simple\simple.vcproj:
+        </strong><span>VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.</span></td></tr><tr name="WarningRowClasssimple"><td class="IconWarningEncoded"><a name="simpleWarning" /></td><td class="messageCell"><strong>simple\simple.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\simple\Debug\simple.exe') does not match the Librarian's OutputFile property value '.\Debug\simple.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Debug\simple.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClasssimple"><td class="IconWarningEncoded"><a name="simpleWarning" /></td><td class="messageCell"><strong>simple\simple.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\simple\Debug\simple.exe') does not match the Linker's OutputFile property value '.\Debug/simple.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Debug/simple.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="WarningRowClasssimple"><td class="IconWarningEncoded"><a name="simpleWarning" /></td><td class="messageCell"><strong>simple\simple.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\simple\Release\simple.exe') does not match the Librarian's OutputFile property value '.\Release\simple.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Release\simple.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).</span></td></tr><tr name="WarningRowClasssimple"><td class="IconWarningEncoded"><a name="simpleWarning" /></td><td class="messageCell"><strong>simple\simple.vcproj:
+        </strong><span>MSB8012: $(TargetPath) ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\simple\Release\simple.exe') does not match the Linker's OutputFile property value '.\Release/simple.exe' ('C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Release/simple.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).</span></td></tr><tr name="MessageRowHeaderShowsimple"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="simpleMessage" onclick="ToggleMessageVisibility('simple'); return false;">
+          显示 2 其他消息
+        </a></td></tr><tr name="MessageRowClasssimple" style="display: none"><td class="IconInfoEncoded"><a name="simpleMessage" /></td><td class="messageCell"><strong>simple\simple.vcproj:
+        </strong><span>Converting project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\simple\simple.vcproj'.</span></td></tr><tr name="MessageRowClasssimple" style="display: none"><td class="IconInfoEncoded"><a name="simpleMessage" /></td><td class="messageCell"><strong>simple\simple.vcproj:
+        </strong><span>Done converting to new project file 'C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\simple\simple.vcxproj'.</span></td></tr><tr style="display: none" name="MessageRowHeaderHidesimple"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="simpleMessage" onclick="ToggleMessageVisibility('simple'); return false;">
+          隐藏 2 其他消息
+        </a></td></tr></table><a name="Solution" /><h3 _locID="ProjectDisplayNameHeader">解决方案</h3><table><tr id="SolutionHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">消息</th></tr><tr name="WarningRowClassSolution"><td class="IconWarningEncoded"><a name="SolutionWarning" /></td><td class="messageCell"><strong>examples2008.sln:
+        </strong><span>Visual Studio 需对此项目要进行非功能性更改，以使该项目能在比 Visual Studio 2010 SP1 新的 Visual Studio 发布版本中打开，而不影响项目的行为。</span></td></tr><tr name="MessageRowHeaderShowSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          显示 2 其他消息
+        </a></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>examples2008.sln:
+        </strong><span>文件已成功备份为 C:\Users\hanyi\workspace\code_repo\salome\SOURCES\cppunit-1.15.1\examples\Backup\examples2008.sln</span></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>examples2008.sln:
+        </strong><span>已成功迁移解决方案</span></td></tr><tr style="display: none" name="MessageRowHeaderHideSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          隐藏 2 其他消息
+        </a></td></tr></table></div></div></body></html>

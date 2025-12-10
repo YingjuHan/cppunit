@@ -1,0 +1,15 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/CppUnitTargets.cmake")
+
+set(CPPUNIT_INCLUDE_DIRS "@PACKAGE_CMAKE_INSTALL_INCLUDEDIR@")
+set(CPPUNIT_DEFINITIONS "")
+
+set(CPPUNIT_LIBRARIES "")
+if(TARGET CppUnit::cppunit_dll)
+  list(APPEND CPPUNIT_LIBRARIES CppUnit::cppunit_dll)
+  list(APPEND CPPUNIT_DEFINITIONS -DCPPUNIT_DLL)
+endif()
+if(TARGET CppUnit::cppunit)
+  list(APPEND CPPUNIT_LIBRARIES CppUnit::cppunit)
+endif()
